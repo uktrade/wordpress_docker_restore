@@ -1,0 +1,12 @@
+--- wordpress/wp-config.php	2021-03-15 11:25:15.422316600 +0000
++++ wp-config.php	2021-03-15 11:25:24.830238400 +0000
+@@ -37,6 +37,9 @@
+ /** The Database Collate type. Don't change this if in doubt. */
+ define( 'DB_COLLATE', '');
+ 
++define('WP_SITEURL', 'http://localhost:8080');
++define('WP_HOME', WP_SITEURL);
++
+ /**#@+
+  * Authentication Unique Keys and Salts.
+  *
